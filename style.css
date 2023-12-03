@@ -1,0 +1,29 @@
+.img-clouds{
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    top: -150px;
+    
+}
+.img-mountains{
+    position: absolute;
+    z-index: 2;
+    top: -38px;
+    width: 100vw;
+}
+.img-man{
+    position: absolute;
+    z-index: 3;
+    top: 290px;
+    
+    width: 100vw;
+}
+ .img-mountains img{
+    width: 100vw;
+}
+ .img-clouds img{
+    width: 100vw;
+}
+ .img-man img{
+    width: 100vw;
+}
