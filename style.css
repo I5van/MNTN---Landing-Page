@@ -175,9 +175,10 @@ footer{
     flex-direction: column;
     color: white;
     font-size: 10pt;
-    width: 10vw;
+    width: 20vw;
     height: 25vh;
     padding-top: 2vh;
+    
 }
 .footer-links{
     display: flex;
@@ -185,7 +186,7 @@ footer{
     flex-direction: column;
     color: white;
     font-size: 10pt;
-    width: 10vw;
+    width: 20vw;
     height: 35vh;
     padding-top: 2vh;
 }
@@ -196,7 +197,7 @@ footer{
     padding-top: 2vh;
     color: white;
     font-size: 10pt;
-    width: 10vw;
+    width: 15vw;
     height: 25vh;
 }
 .footer-content{
@@ -204,5 +205,19 @@ footer{
     display: flex;
     justify-content: space-around;
     
+    
+}
+.footer-header{
+    color: #FBD784;
+    font-size: 16pt;
+}
+.footer-txt{
+    display: flex;
+    justify-content: center;
+    padding-top: 7vh;
+    color: white;
+    font-size: 12pt;
+    width: 100vw;
+    opacity: 50%;
     
 }
