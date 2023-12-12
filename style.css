@@ -258,6 +258,8 @@ footer{
     font-size: 14pt;
     font-weight: 400;
     letter-spacing: 2px;
+    position: relative;
+    padding-left: 7vw;
 }
 .content01-text h2{
     color: white;
@@ -271,4 +273,21 @@ footer{
 .content01-link{
     color: #FBD784;
     font-size: 8pt;
+   
+}
+.content01-ref{
+    display: flex;
+    justify-content: space-between;
+    width: 10vw;
+    align-items: center;
+}
+.content01 h3:before{
+    content:"";
+    width: 5vw;
+    background-color: #FBD784;
+    height: 3px;
+    position: absolute;
+    top: 6px;
+    left: 0;
+    
 }
