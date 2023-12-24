@@ -231,7 +231,9 @@ footer{
     height: 100vh;
     background-color: #0B1D26;
     position: absolute;
-    top: 100vh;
+    top: 95vh;
+    z-index: 2;
+    position: relative;
 
     
 }
@@ -290,4 +292,13 @@ footer{
     top: 6px;
     left: 0;
     
+}
+.content-number{
+    position: absolute;
+    top: 10px;
+    font-size: 70px;
+    opacity: 30%;
+    color: white;
+    left: 130px;
+
 }
