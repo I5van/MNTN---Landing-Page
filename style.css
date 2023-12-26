@@ -96,6 +96,7 @@ h6 {
     position: absolute;
     z-index: 1;
     width: 100vw;
+ 
     
     
 }
@@ -119,6 +120,7 @@ h6 {
 }
  .img-clouds img{
     width: 100vw;
+    filter: brightness(80%);
     
 }
  .img-man img{
@@ -221,7 +223,7 @@ footer{
     background-color: #0B1D26;
     height: 60vh;
     position: absolute;
-    top: 200vh;
+    top: 405vh;
     width: 100vw;
 }
 .content01{
@@ -231,10 +233,10 @@ footer{
     height: 100vh;
     background-color: #0B1D26;
     position: absolute;
-    top: 95vh;
+    top: 101vh;
     z-index: 2;
     position: relative;
-
+    z-index: 6;
     
 }
 .content01-img{
@@ -250,6 +252,7 @@ footer{
     flex-direction: column;
     justify-content: space-around;
     height: 50vh;
+    position: relative;
 }
 .content01-img img{
     width:30vw;
@@ -295,10 +298,78 @@ footer{
 }
 .content-number{
     position: absolute;
-    top: 10px;
-    font-size: 70px;
+    top: -50px;
+    font-size: 170px;
     opacity: 30%;
     color: white;
-    left: 130px;
+    left: -80px;
 
+}
+.gradient{
+    z-index: 5;
+    position: absolute;
+    top: 90vh;
+    width: 100vw;
+    height: 20vh;
+    background: rgb(11,29,38);
+    background: linear-gradient(0deg, rgba(11,29,38,1) 50%, rgba(0,212,255,0) 100%);
+}
+.website-head{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    z-index: 7;
+}
+.website-head-h1{
+    color: white;
+    font-size: 44pt;
+    font-weight: 600;
+    width: 50vw;
+
+}
+.website-head-h3{
+    color: #FBD784;
+    font-size: 14pt;
+    font-weight: 400;
+    letter-spacing: 2px;
+  
+    
+}
+.website-head-h3:before{
+    content:"";
+    width: 5vw;
+    background-color: #FBD784;
+    height: 3px;
+    position: absolute;
+    top: 56px;
+    left: 554px;
+    
+}
+.social-media{
+display: flex;
+width: 10vw;
+flex-direction: column;
+justify-content: space-around;
+position: absolute;
+z-index: 7;
+height: 30vh;
+top: 25vh;
+left: 7vw;
+}
+.social-media img{
+    width: 24px;
+    height: 24px;
+}
+.social-media-text{
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 5px;
 }
