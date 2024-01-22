@@ -394,14 +394,21 @@ left: 2vw;
     width: 5px;
     height: 240px;
     background-color: white;
-  
-  
+    right: 20px;
+    top:30vh;
+    
+     position: fixed;
     z-index: 7;
 }
-.super-wrapper{
-    height: 100vh;
-position: fixed;
-z-index: 7;
-display: flex;
-align-items: center;
+.scroll-up-content{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: white;
+    justify-content: space-between;
+    position: fixed;
+    right: 40px;
+    top: 30vh;
+    z-index: 7;
+    height: 35vh;
 }
