@@ -18,8 +18,11 @@
 }
 
 a:focus,
-a:active {
+a:active{
 	outline: none;
+}
+a:visited{
+    color:white
 }
 
 nav,
@@ -91,6 +94,9 @@ h6 {
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@400;500;700&display=swap');
 *{
     font-family: 'Saira Extra Condensed', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -357,29 +363,7 @@ left: 400px;
    
     
 }
-.social-media{
-display: flex;
-width: 10vw;
-flex-direction: column;
-justify-content: space-around;
-position: absolute;
-z-index: 7;
-height: 30vh;
-top: 25vh;
-left: 2vw;
-}
-.social-media img{
-    width: 24px;
-    height: 24px;
-}
-.social-media-text{
-    color: white;
-    font-size: 10pt;
-    text-align: center;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    padding: 5px;
-}
+
 .website-head-scroll{
     color: white;
     font-size: 10pt;
@@ -394,9 +378,12 @@ left: 2vw;
     width: 5px;
     height: 240px;
     background-color: white;
-    right: 20px;
+    right: 2vw;
     top:30vh;
-    
+    animation-name: moving-scroll-up;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    animation-delay: 1s;
      position: fixed;
     z-index: 7;
 }
@@ -407,8 +394,73 @@ left: 2vw;
     color: white;
     justify-content: space-between;
     position: fixed;
-    right: 40px;
+    right: 4vw;
     top: 30vh;
     z-index: 7;
     height: 35vh;
+    animation-name:moving-scroll-up-content;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+   
 }
+@keyframes moving-scroll-up{
+    from{right:-10vw;}
+    to {right:2vw;}
+}
+@keyframes moving-scroll-up-content{
+    from{right:-10vw;}
+    to {right:4vw;}
+}
+
+@keyframes moving{
+    from{ left:-10vw;}
+    to {left:2vw ;}
+}
+.social-media{
+    display: flex;
+    width: 10vw;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 7;
+    height: 30vh;
+    top: 25vh;
+    left: 2vw;
+    animation-name: moving ;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+
+
+    }
+    .social-media img{
+        width: 24px;
+        height: 24px;
+    }
+    .social-media-text{
+        color: white;
+        font-size: 10pt;
+        text-align: center;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        padding: 5px;
+    }
+   #content-block-1{
+    position: relative;
+    top:-5vh;
+   }
+   #content-block-2{
+    position: relative;
+    top:-5vh;
+   }
+   #content-block-3{
+    position: relative;
+    top:-5vh;
+   }
+   #content-block-start{
+    position: relative;
+    top:-5vh;
+   }
+   #content-block-footer{
+    position: relative;
+    top:-5vh;
+   }
