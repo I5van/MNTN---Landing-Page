@@ -22,7 +22,7 @@ a:active{
 	outline: none;
 }
 a:visited{
-    color:white
+    color:white 
 }
 
 nav,
@@ -235,19 +235,7 @@ footer{
     top: 405vh;
     width: 100vw;
 }
-.content01{
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0B1D26;
-    position: absolute;
-    top: 101vh;
-    z-index: 2;
-    position: relative;
-    z-index: 6;
-    
-}
+
 .content01-img{
     display: flex;
     padding-top: 3vh;
@@ -402,6 +390,43 @@ left: 400px;
     animation-iteration-count: 1;
     animation-duration: 3s;
    
+}
+.content01{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B1D26;
+    position: absolute;
+    top: 101vh;
+    z-index: 2;
+    position: relative;
+    z-index: 6;
+   
+    
+}
+#block-1{
+    animation-name: left-block-moving;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+#block-2{
+    animation-name: right-block-moving;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+#block-3{
+    animation-name: left-block-moving;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+}
+@keyframes right-block-moving{
+    from{right:-100vw; opacity:0}
+    to {right: 0vw; opacity:1}
+}
+@keyframes left-block-moving{
+    from{left:-100vw; opacity:0}
+    to {left: 0vw; opacity:1}
 }
 @keyframes moving-scroll-up{
     from{right:-10vw;}
