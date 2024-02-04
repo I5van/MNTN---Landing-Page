@@ -100,6 +100,7 @@ html{
 }
 body{
     overflow-x: hidden;
+    background-color: #0B1D26;
 }
 .img-clouds{
     position: absolute;
