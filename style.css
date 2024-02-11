@@ -366,7 +366,7 @@ left: 400px;
 .scroll-up{
     width: 5px;
     height: 240px;
-    background-color: white;
+    
     right: 2vw;
     top:30vh;
     animation-name: moving-scroll-up;
@@ -375,6 +375,15 @@ left: 400px;
     animation-delay: 1s;
      position: fixed;
     z-index: 7;
+}
+.scroll-up div{
+    width: 5px;
+    height: 60px;
+    background-color: white;
+    opacity: 50%;
+}
+#scroll-up-1{
+    opacity:100%;
 }
 .scroll-up-content{
     display: flex;
@@ -409,17 +418,21 @@ left: 400px;
 #block-1{
     animation-name: left-block-moving;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 1s;
+    animation-play-state: paused;
 }
 #block-2{
     animation-name: right-block-moving;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 1s;
+    animation-play-state: paused;
+
 }
 #block-3{
     animation-name: left-block-moving;
     animation-iteration-count: 1;
-    animation-duration: 3s;
+    animation-duration: 1s;
+    animation-play-state: paused;
 }
 @keyframes right-block-moving{
     from{right:-100vw; opacity:0}
